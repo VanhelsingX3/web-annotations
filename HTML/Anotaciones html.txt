@@ -5,7 +5,7 @@ Es un estandar que aúna 3 tecnologías.
 - CSS -> Apariencia.
 - JS -> Interactividad & animación.
 
-<!DOCTYPE html> Manera de esécificar ó de señalar que esta página web será programada en html5
+<!DOCTYPE html> Manera de especificar ó de señalar que esta página web será programada en html5
 
 <header> es un encabezado
 
