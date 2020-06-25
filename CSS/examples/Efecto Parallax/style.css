@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.box{
+    width: auto;
+    height: 150px;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+    color: white;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.empty-box{
+    width: auto;
+    height: 800px;
+    text-align: center;
+    font-size: 80px;
+
+}
