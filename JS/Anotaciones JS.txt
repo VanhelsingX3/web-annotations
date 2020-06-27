@@ -5,7 +5,7 @@
 	- Multiparadigma
 */
 
-/*---------- Varialbes y Constantes ---------------*/
+/*---------- Variables y Constantes ---------------*/
 
 /* La forma de declarar variables y asignarles valor es: */
 
@@ -52,7 +52,7 @@ Existen dos formas de usar comentarios:
 /*----------------------- Tipos de Datos ------------------*/
 
 /*JavaScript es un lenguaje dinamicamente tipado, no podemos decirle al interprete que tipo de datos es cada uno
- el interprete deduce que es cada variable1
+ el interprete deduce que es cada variable.
  
  Existen dos tipos de datos:
  

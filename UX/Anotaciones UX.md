@@ -118,8 +118,6 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 | 4     | Morado   | Esqueleto  | Se definen los elementos de la interfaz, navegación y contenido.                                                      |
 | 5     | Azul     | Superficie | Vista los elementos de la interfaz                                                                                    |
 
-
-
 ### Estrategia
 
 - Se recopila toda la información sobre el proyecto
@@ -132,8 +130,6 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 
 - Se define el proceso de diseño
 
-
-
 ### Alcance
 
 - Se representan posibles estructuras de contenido acorde a los requisitos pre-establecidos
@@ -141,8 +137,6 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 - Se definen flujos funcionales
 
 - Se representan las primeras estructuras de interfaz
-
-
 
 ### Estructuras
 
@@ -156,8 +150,6 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 
 - Se crean prototipos de alta fidelidad o interactivos
 
-
-
 ### Esqueleto
 
 - Se presentan los resultados de diseño
@@ -167,8 +159,6 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 - Se realizan test de usuario
 
 - Se corrigen los posibles problemas detectados y se realizan nuevas iteraciones en el proceso de diseño
-
-
 
 ### Visual
 
@@ -180,19 +170,15 @@ Tanto como a nivel conceptual como para comprender las bases de UX sigue siendo 
 
 - Iconografía
 
-
-
 ## Procesos Iterativos
 
 Es importante destacar que los procesos de diseño no siempre siguen este patrón lineal, en los últimos años han evolucionado las metodologías e incluso cada proyecto de forma individual puede tener bastantes peculiaridades. No es necesario seguir el orden definido o el paso de los mismos, en cualquier caso la tendencia de los últimos años es seguir proceso iterativos de los cuales se definen las soluciones, se implementan, se prueban y se vuelven a iterar hasta refinar la web o aplicación en términos de uso. 
-
-
 
 ## Lean UX cycle
 
 De la mano de startup se ponen de moda metodologías ágiles cuyo objetivo no es solamente estar enfocado en el usuario, sino salir al mercado con un producto nimiamente viable y poder aprender del uso que hacen los usuarios del mismo para poder evolucionarlo.
 
-<img src="https://lh3.googleusercontent.com/proxy/VWptYxxOC-moIAAxu1caddcu5BRim9wQOwljGJgyj0n2UfHvmV909dRN7dV6FsKoIEz62czfUXA-FG8GTNj_IPoBC6guP8OUkWzzdGMG9Z-mD6Uj-WiRbX9hks-l2havnk7ilfHBBq3g7Alt1yF1Yo_Pvg" title="Que tipo de técnica de investigación UX utilizar 1" alt="UX" data-align="center">
+<img title="Que tipo de técnica de investigación UX utilizar 1" src="https://bbvaopen4u.com/sites/default/files/img/embed/new/bbva-open4u-procesolean.jpg" alt="UX" data-align="center">
 
 ## Metodologías ágiles y experiencia de usuario
 
@@ -200,11 +186,7 @@ Los procesos de diseño UX tienen más que convivir con procesos de desarrollo. 
 
 ## [¿Qué técnica UX utilizar en cada ocasión? ](https://dispersium.es/que-tecnica-ux-utilizar/)
 
-
-
 ## Técnicas de Análisis
-
-
 
 <img src="https://dispersium.es/wp-content/uploads/2016/07/que-tipo-de-test-usar-1-1.png" title="Que tipo de técnica de investigación UX utilizar 1" alt="UX" data-align="center">
 
@@ -214,83 +196,53 @@ Los procesos de diseño UX tienen más que convivir con procesos de desarrollo. 
 
 Tras el proceso de análisis donde obtenemos toda la información necesaria para afrontar el proyecto, llega el momento de arremangarse y de afrontar la definición de la solución que permitirá el desarrollo posterior de la misma.
 
-
-
 ### Arquitectura de información
 
 La arquitectura de la información (AI) es la disciplina encargada del estudio, análisis, organización del a información en espacios de información, y de la selección y presentación de los datos en los sistemas de información interactivos y no interactivos.
 
-
-
 Nos ayuda a estructurar el contenido y como accedemos a este mediante estructuras de navegación y etiquetado, además nos ayuda a ubicar el contenido en la posición adecuada dentro de la interfaz. Es común el diseño de arboles de contenido además de wireframes.
-
-
 
 ### El diseño de interacción
 
 Diseño de interacción (IxD, por sus siglas en inglés) es un campo de desarrollo interdisciplinario que define el comportamiento de los productos y sistemas con los que interactúa el usuario.
 
-
-
 Se preocupa de la forma en que el usuario interactúa con una interfaz y que elementos de interacción son los más adecuados.
-
-
 
 ### Análisis de negocio
 
 Es el encargado de transmitir los requisitos de negocio al cliente y al equipo de desarrollo, generando requisitos y especificaciones funcionales, casos de uso y documentando cada uno de ellos de forma detallada.
 
-
-
 ### Estrategia de marca
 
 Es la responsable de construir las relaciones entre los mercados y los elementos de la marca, incluyendo valores como la responsabilidad corporativa, mensajes, tratamiento del logotipo, color etc...
-
-
 
 ### Estrategia de contenido
 
 Transforma los requisitos de negocio y usuario en contenido, tanto artículos, documentos, imágenes o vídeo, identificando "Gaps" dentro de la estructura de contenido y generando material para cubrirlo.
 
-
-
 ## Fase de Desarrollo
 
 Tras la fase de definición llega el momento de plasmar todo nuestro trabajo previo en una web o aplicación real.
-
-
 
 ### Diseño gráfico
 
 Es la acción de concebir, programar, proyectar y realizar comunicaciones visuales, producidas en general por medios industriales y destinadas a transmitir mensajes específicos a grupos sociales determinados, con un propósito claro y específico.
 
-
-
 Traslada la propuesta definida en wireframes a una proyección visual dentro de los margenes visuales de la entidad corporativa.
-
-
 
 ### Desarrollo Front-end
 
 Es el perfil encargado de transformar los diseños realizados por el equipo de creatividad y diseño de interacción en HTML, CSS, JS. 
 
-
-
 Generan por tanto la estructura de las página y plantillas y los elementos dinámicos como menús desplegables, carruseles, etc... además de incluir elementos multimedia.
-
-
 
 ### Desarrollo back-end
 
 El desarrollo back-end puede influenciar la experiencia de usuario, desde la velocidad de acceso al sistema a las limitaciones técnicas que pueda tener o el coste esfuerzo de aplicar algunas soluciones. Debemos tratar de buscar el equilibrio entre un buen diseño y el esfuerzo de desarrollo.
 
-
-
 ## Online
 
 Realmente este es el comienzo, no el final. Es aquí donde podemos iterar continuamente puliendo errores o incluyendo nuevas funcionalidades.
-
-
 
 ### SEM/SEO
 
