@@ -1,0 +1,9 @@
+/*Caracteristicas de JavaScript
+	- Dinamicamente tipado
+	- Interpretado (navegador, servidor)
+	- Prototipado
+	- Multiparadigma
+*/
+
+/*Varialbes y Constantes*/
+
