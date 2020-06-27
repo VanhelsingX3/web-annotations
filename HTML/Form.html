@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="post"></form>
+
+    <!--required hace que sea obligatorio llenar el campo-->
+
+    <!--autofocus señala y resalta un campo a llenar lo recomendado es ponerlo
+        en el campo inicial donde quiero que el usuario comienza a escribir.
+        Solo un elemento del form puede tenerlo-->
+
+    <!--placeholder Crear textos descriptivos dentro del elemento-->
+
+    <!--pattern Utiliza expresiones regulares, es un pseudocódigo que se utliza
+    para que los lenguajes sigran un patrón predeterminado-->
+
+    <!-- Inputs -->
+
+    Página web: <input type="url" name="web" id="" required autofocus placeholder="https://www.example.com"><br><br>
+
+    Móvil: <input type="text" name="movil" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$"> 
+    <!-- xxx xxx xxxx -->
+
+    Correo: <input type="email" name="email" id=""><br><br>
+
+    Fecha: <input type="date" name="fecha" id=""><br><br>
+
+    Mes: <input type="month" name="mes" id=""><br><br>
+
+    Semana: <input type="week" name="semana" id=""><br><br>
+
+    Hora: <input type="time" name="hora" id=""><br><br>
+
+    Fecha y Hora: <input type="datetime-local" name="fecha-hora" id=""><br><br>
+
+    Edad: <input type="number" name="edad" id="" min="1" max="100" step="5"><br><br>
+
+    Puntos: <input type="range" name="puntos" id="" min="10" max="20"><br><br>
+
+    Color Favorito: <input type="color" name="color-fav" id=""><br><br>
+
+    <label for="checkbox"><input type="checkbox" name=""> checkbox</label><br><br>
+
+    <!-- selección -->
+
+    <!-- el atributo name debemos colocarlo igual en todos los radio button que tengamos para que al activar uno se desactiven los otros -->
+    <label for="radio"><input type="radio" name="nombre">radio</label><br><br>
+
+    <select>
+        <optgroup> <!-- nos ayuda a marcar un subgrupo de opciones-->
+            <option>opcion 1</option>
+            <option>opcion 2</option>
+        </optgroup>
+    </select><br><br>
+
+    <input list="colores" name="colores">
+    <datalist id="colores">
+        <option value="red"></option>
+        <option value="blue"></option>
+        <option value="white"></option>
+        <option value="black"></option>
+    </datalist><br><br>
+
+    <!-- Escritura -->
+
+    <textarea>
+    </textarea><br>
+
+    <!-- enviar -->
+
+    <input type="image" src="https://images.vexels.com/media/users/3/141174/isolated/preview/5f5b537d3dfa9f353b4a6bf488532b47-enviar-boton-naranja-by-vexels.png" alt="Enviar Datos" width="200" height="200">
+    <!-- <input type="submit" value=""> -->
+
+    <!-- --------Botones-------- -->
+    <form>
+        <fieldset>  <!-- este elemento nos permite meter varios campos en un solo contenedor -->
+            <legend>Formulario</legend> <!--este campo le da un nombre al contenedor -->
+            <input type="button" value="Presioname"><br><br>
+            <input type="file" name="Subir un archivo" id="">
+        </fieldset>
+    </form>
+</body>
+</html>

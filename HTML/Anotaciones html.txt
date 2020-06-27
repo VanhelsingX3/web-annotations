@@ -185,6 +185,10 @@ las imagenes se insertan con la etiqueta img
 -src es la ruta de nuestra imagen
 -alt texto alternativo a la imagen
 
+Los SVG se insertan con la etiqueta svg
+
+<svg widht="" height="" xmlns="http://ww.w3.org/2000/svg"></svg>
+
 (Pexels, pagina de imagenes sin copyright)
 
 -----------viewport y device pixel ratio-----------
@@ -291,48 +295,6 @@ con en el atributo rowspan podemos difinir cuantas filas queremos cubrir desde e
 </form>
 
 ** el atributo placeholder de los inputs puede ayudarnos a omitir la colocacion de un label
-
------------Tipos de Input-------------
-
-<input type="text" name="texto">
-<input type="password" name="contraseñas">
-<input type="email" name="correo electronico">
-<input type="date" name="para fechas">
-<input type="number" name="para numeros">
-
---------Campos de seleccion y atributos--------
-
-<form>
-	<fieldset> este elemento nos permite meter varios campos en un solo contenedor
-		<legend> este campo le da un nombre al contenedor</legend>
-	</fieldset>
-</form>
-
---checkbox
-
-<label><input type="checkbox" name=""> opcion</label>
-
---radio button
-el atributo name debemos colocarlo igual en todos los radio button que tengamos para que al activar uno se desactiven los otros
-<label><input type="radio" name="nombre">opcion</label>
-
---select
-
-<select>
-	<optgroup> -- nos ayuda a marcar un subgrupo de opciones
-		<option>opcion 1</option>
-		<option>opcion 2</option>
-		.
-		.
-	</optgroup>
-</select>
-
---textarea
-
-<textarea>
-</textarea>
-
-** el atributo required hace que sea obligatorio rellenar un campo del formulario
 
 --------- video y codecs html----------
 el codec H264 es el estandar de video en la web
