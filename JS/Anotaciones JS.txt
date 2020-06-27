@@ -5,5 +5,74 @@
 	- Multiparadigma
 */
 
-/*Varialbes y Constantes*/
+/*---------- Varialbes y Constantes ---------------*/
 
+/* La forma de declarar variables y asignarles valor es: */
+
+    let nombreVariable = valor
+
+/* podemos declarar multiples variables separando por coma: */
+    
+    let variable1 = valor,
+        variable2 = valor,
+        variable3 = valor
+        
+/* La forma de declarar constantes es: */
+
+    const nombreConstante = valor
+
+/*----------------------- Sintaxis ----------------*/
+
+/* comentarios:
+Existen dos formas de usar comentarios:
+*/
+
+//Comentario de una linea
+
+/*Comentario
+ * de varias
+ * lineas
+ */
+
+/*------------------ Punto y Coma ------------------*/
+
+/* El punto y coma sirve es opcional, se usa para separar expresiones pero los saltos de linea cumplen la misma funcion */
+
+/*------------ Case Sensitive -------------*/
+
+/* JavaScript es case sensitive, esto significa que diferencia entre mayusculas y minusculas 
+ 
+ la forma estandar en JavaScript es usar camel case:
+ 
+ ejemplos: userAge, galleryImage
+ 
+ tambien es importante que nuestros nombres de variables sean descriptivos
+ */
+
+/*----------------------- Tipos de Datos ------------------*/
+
+/*JavaScript es un lenguaje dinamicamente tipado, no podemos decirle al interprete que tipo de datos es cada uno
+ el interprete deduce que es cada variable1
+ 
+ Existen dos tipos de datos:
+ 
+    - Primitivos:
+        * number
+        * string: hay tres formas de declarar textos: con "", con '' y con `` esta ultima es la recomendada
+        * boolean
+        * undefined: este es un valor especial que existe cuando no definimos el valor de una variable
+        * null
+        * symbol(): permite crear referencias unicas
+
+    - Compuestos:
+        * arrays
+        * objetos
+
+El operador typeof:
+este operador nos retorna un string en el que nos dice cual es el tipo de dato de una variable
+
+ejemplo:
+
+console.log(typeof nombreVariable)
+        
+        */
