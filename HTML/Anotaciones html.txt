@@ -369,11 +369,11 @@ el atributo poster permite definir un poster inicial para el video (este poster 
 
 --ejemplo de script para ejecutar la ventana modal
 <script>
-	const modal = document.getElementById('modal');
-	const button = document,getElementById('button');
-	button.addEventListener('click', ()=>{
-		modal.setAtrribute('open', 'true')
-	})
+    const modal = document.getElementById('modal');
+    const button = document.getElementById('button');
+    button.addEventListener('click', ()=>{
+    modal.setAttribute('open', 'true')
+})
 </script>
 
 --------------contenido embebido-------------
