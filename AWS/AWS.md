@@ -54,21 +54,13 @@ El uso de EC2 elimina la necesidad de invertir inicialmente en hardware de maner
 
 Dentro de la infraestructura de AWS, SNS (servicio simple de notificaciones) es uno de los servicios que se ocupan de enviar notificaciones.
 
-
-
 **Funcionamiento de SNS:**
 
 <img src="https://docs.aws.amazon.com/es_es/sns/latest/dg/images/vpce-tutorial-architecture.png" title="Funcionamiento de SNS" alt="" data-align="center">
 
-
-
 En su estructura más básica solo necesitamos crear un tema de notificación o un asunto para avisar y subscribir los puntos que recibirán la notificación. Esto puntos deben ser de diferentes tipos por ejemplo: http, https, email, etc.  
 
-
-
 <img src="https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2017/11/20/introducing_sns_message_filtering_image_1.png" title="" alt="" data-align="center">
-
-
 
 ## ¿Qué es IAM?
 
@@ -76,13 +68,9 @@ AWS Identity and Access Management (IAM) es un servicio web que le ayuda a contr
 
 Cuando se crea por primera vez una cuenta de AWS, se comienza con una única identidad de inicio de sesión que tiene acceso completo a todos los servicios y recursos de AWS de la cuenta. Esta identidad recibe el nombre de AWS de la cuenta de *usuario raíz* y se obtiene acceso a ella iniciando sesión con la dirección de correo electrónico y la contraseña que utilizó para crear la cuenta. Le recomendamos que no utilice usuario raíz en sus tareas cotidianas, ni siquiera en las tareas administrativas. En lugar de ello, es mejor ceñirse a la [práctica recomendada de utilizar exclusivamente usuario raíz para crear el primer usuario de IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users). A continuación, guarde las credenciales de usuario raíz en un lugar seguro y utilícelas únicamente para algunas tareas de administración de cuentas y servicios.
 
-
-
 ## Características de IAM
 
 IAM le ofrece las siguientes características:
-
-
 
 **Acceso compartido a la cuenta de AWS**
 
@@ -138,19 +126,13 @@ IAM, al igual que muchos otros servicios de AWS, brinda consistencia final. IAM 
 
 AWS Identity and Access Management (IAM) y AWS Security Token Service (AWS STS) son características de las cuentas de AWS que se ofrecen sin cargo adicional. Solo se le cobrará cuando tenga acceso a otros servicios de AWS utilizando los usuarios de IAM o las credenciales de seguridad temporales de AWS STS. Para obtener información sobre los precios de otros productos de AWS, consulte la página de precios de Amazon Web Services.
 
-
-
 ## Roles IAM
 
 Un rol IAM es una identidad con permisos específicos. Sin embargo la intención es que cualquier usuario pueda asumir un rol que necesite, además un rol no tiene asociada credenciales a lo largo o con algún plazo estándar como una contraseña o claves de acceso. En su lugar cuando se asume un rol se dan credenciales temporales para la sesión.
 
-
-
 ## Usuarios y políticas IAM
 
 Las políticas de IAM definen los permisos para una acción independiente del método que se utilice para realizar la operación.
-
-
 
 **Tipos de políticas:**
 
@@ -166,13 +148,9 @@ Las políticas de IAM definen los permisos para una acción independiente del m�
 
 - Políticas de sesión
 
-
-
 ## Acceso a IAM
 
 Puede trabajar con AWS Identity and Access Management de cualquiera de las siguientes formas.
-
-
 
 **Consola de administración de AWS**
 
@@ -192,16 +170,100 @@ AWS ofrece SDK (kits de desarrollo de software) que se componen de bibliotecas y
 
 Puede acceder a IAM y AWS de manera programática mediante la API HTTPS de IAM, que le permite emitir solicitudes HTTPS directamente al servicio. Cuando use la API HTTPS, debe incluir código para firmar digitalmente las solicitudes utilizando sus credenciales. Para obtener más información, consulte [Llamar a la API mediante solicitudes de consulta HTTP](https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/programming.html) y la [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/).
 
-
-
 ## Infraestructura Global de AWS
 
-Los centros de datos de AWS se crean en clusters en diversas regiones 
+Los centros de datos de AWS se crean en clusters en diversas regiones globales, ningún centro de datos está frío en caso de falla los procesos automatizados alejan el trafico de datos del cliente del área afectada así las aplicaciones principales se implementan en una configuración de 'n+1' para que en el caso de una falla en el centro de datos haya capacidad suficiente para permitir que el trafico se equilibre en la carga de los sitios restantes.
 
 
 
+Los centros de datos están organizados en AZ (Zona de Disponibilidad) los cuales comprenden uno o más centro de datos con alguna o algunas zonas de disponibilidad que tienen hasta seis centro de datos sin embarga ningún centro de datos puede ser parte de dos AZ.
 
 
 
+Como la directiva de privacidad de datos de la unión europea, cuando se almacenen datos en una región especifica no se replica fuera de está región. AWS nunca saca sus datos de la región donde los coloco por lo tanto es tu responsabilidad replicar datos en todas las regiones si así lo requieren las necesidades del negocio. AWS proporcionara información sobre el país y el estado donde reside cada región.
 
 
+
+Los cache de bordes regionales utilizados por defecto con Cloud from de Amazon se utilizan cuando se tiene contenido al que no se accede con la frecuencia suficiente para permanecer en un ubicación de borde. Los cachés de bordes regionales absorben todo el contenido y proporcionan una alternativa a este contenido que debe ser recuperado de algún servidor de origen en caso de alguna falla.
+
+
+
+## Auto escalado en AWS
+
+El escalado de aplicaciones para optimizar los costos y el nivel de desempeño es muy utilizado en AWS, éste monitoriza tus aplicaciones y ajusta automáticamente la capacidad para mantener un desempeño predecible y escalable al menor costo posible.
+
+
+
+## Puertos de enlace a Internet
+
+Un gateway de Internet es un componente de la BPC de escalado horizontal redundante y de alta disponibilidad que permite la comunicación entre las instancias de BPC e Internet.
+
+Por lo tanto no plantea riesgos de disponibilidad ni restricciones de ancho de banda para el tráfico de red de Internet.
+
+Sirve para dos fines uno proporcionar un objetivo en sus tablas de ruteo de bpc para el tráfico direccionable de Internet y realizar la conversión de las direcciones de red NAT para las distancias que tengan asignadas direcciones IPv4 públicas.
+
+
+
+## ¿Qué es Amazon VPC?
+
+Amazon Virtual Private Cloud (Amazon VPC) le permite lanzar recursos de AWS en una red virtual que haya definido. Dicha red virtual es prácticamente idéntica a las redes tradicionales que se utilizan en sus propios centros de datos, con los beneficios que supone utilizar la infraestructura escalable de AWS.
+
+
+
+**Más información**
+
+- [VPC y subredes](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-vpc-subnet)
+
+- [Plataformas admitidas](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-supported-platform)
+
+- [VPC predeterminadas y no predeterminadas](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-default-nondefault)
+
+- [Acceso a Internet](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-connectivity)
+
+- [Acceso a redes corporativas o domésticas](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-vpn)
+
+- [Acceso a servicios a través de AWS PrivateLink](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-privatelink)
+
+- [Consideraciones sobre la red global privada de AWS](https://docs.aws.amazon.com/es_es/vpc/latest/userguide/what-is-amazon-vpc.html#what-is-aws-global-network)
+
+
+
+## Tablas de ruteo
+
+Contienen conjuntos de reglas denominadas rutas que se usan para determinar a dónde se dirige el tráfico de red. Cada subred de la BPC debe estar asociada a una tabla de ruteo. La tabla controla el direccionamiento de la subred.
+
+La subred sólo puede asociarse a una tabla de ruteo a la vez. Sin embargo puede asociarse a varias subred a la misma tabla de ruteo. Dentro de los conceptos básicos de la tabla de ruteo tenemos a continuación los siguientes:
+
+
+
+- La BPC dispone de un router implícito de manera automática. 
+
+- La BPC cuenta con una tabla de ruteo principal que puede modificar. 
+
+- Asimismo puede crear tablas de ruteo adicionales personalizadas para tu BPC. 
+
+- Cada subred debe estar asociada a una tabla de ruteo. Dicha tabla controlará el direccionamiento de la subred si no asocias de manera explícita ninguna subred a una tabla de ruteo.
+
+
+
+## Amazon RDS
+
+RDS (Servicio de bases de datos relacional) escala una base de datos relacional en la nube con tan solo unos clics ya que es sencillo de configurar utilizar y escalar una base de datos relacional en la nube.
+
+
+
+El servicio suministra la capacidad rentable y escalable al mismo tiempo que automatiza las arduas tareas administrativas como el aprovisionamiento del hardware la configuración de bases de datos y la implementación de parches así como la creación de copias de seguridad lo libera de estas tareas para que pueda concentrarse en sus aplicaciones y darles un rendimiento más rápido.
+
+
+
+Esta función de Amazon está disponible para varios tipos de instancias de bases de datos optimizadas para memoria rendimiento u operaciones de entrada salida y le proporciona seis motores de bases de datos conocidos entre los que puedes elegir incluidos Amazon Arora posgrado SQL SQL Maria de Oracle Data Boyz y SQL Server.
+
+
+
+## Dynamo DB
+
+Es un servicio de bases de datos No SQLrápido y flexible para cualquier escala.
+
+
+
+Este es una base de datos de claves valor y documentos que ofrece rendimiento en milisegundos de un solo dígito a cualquier escala se trate de una base de datos multi región y multi maestro completamente administrada con seguridad integrada copia de seguridad y restauración así como almacenamiento de caché en memoria para aplicaciones a escala de Internet Dayna Mode puede gestionar más de 10 billones de solicitudes por día y admite picos de más de 20 millones de solicitudes por segundo.
