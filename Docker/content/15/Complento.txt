@@ -1,0 +1,6 @@
+Construcción de imágenes Docker en múltiples etapas
+https://medium.com/@serrodcal/construcci%C3%B3n-de-
+im%C3%A1genes-docker-en-m%C3%BAltiples-etapas-7933179a3e1f 
+
+Construir contenedores pequeños (Buenas Prácticas de Kubernetes)
+https://www.youtube.com/watch?v=wGz_cbtCiEA

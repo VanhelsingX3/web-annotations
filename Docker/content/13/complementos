@@ -1,0 +1,5 @@
+Redactar versiones de archivos y actualizar
+https://docs.docker.com/compose/compose-file/compose-versioning/
+
+Controlar el orden de inicio y apagado en Compose
+https://docs.docker.com/compose/startup-order/
