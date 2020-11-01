@@ -9,5 +9,5 @@ Existen distintos tipos de complejidad algorítmica:
 - **O(n²) Polinomial:** crecen de forma cuadrática. No son recomendables a menos que el input de datos en pequeño.
 - **O(2^n) Exponencial:** crecerá de forma **exponencial**, por lo que la carga es muy alta. Para nada recomendable en ningún caso, solo para análisis conceptual.
 - **O(n!) Factorial:** crece de forma **factorial**, por lo que al igual que el exponencial su carga es muy alta, por lo que jamas utilizar algoritmos de este tipo.
-- ![class big(o)](/home/vanhelsingx3/Documentos/GitHub/annotations/python/11/class big(o).png) 
+- ![class big(o)](./class big(o).png) 
 

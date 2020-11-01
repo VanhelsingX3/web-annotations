@@ -54,4 +54,4 @@ def fibonacci(n):
 # O(2**n)
 ```
 
-![Notación Big(o)](/home/vanhelsingx3/Documentos/GitHub/annotations/python/10/Notación Big(o).png) 
+![Notación Big(o)](./Notación Big(o).png) 
