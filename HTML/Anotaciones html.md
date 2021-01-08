@@ -461,9 +461,9 @@ El atributo **poster** permite definir un poster inicial para el video (este pos
 <audio src="music.mp3" controls autoplay></audio>
 ```
 
-*video.js es un framework de js que nos ayuda a colocar un reproductor*
-
-*flowplayer una recomendacion de reproductor*
+> *video.js es un framework de js que nos ayuda a colocar un reproductor*
+>
+> *flowplayer una recomendacion de reproductor*
 
 ## Contenido interactivo en HTML
 
@@ -499,15 +499,16 @@ Ejemplo de script para ejecutar la ventana modal:
 <iframe src=""></iframe> esta etiqueta permite traerse otra pagina a la nuestra
 ```
 
-*wufoo permite crear formularios y nosotros lo insertamos con iframe* 
-
-*disqus permite tener comentarios en tu pagina web*
+> *wufoo permite crear formularios y nosotros lo insertamos con iframe* 
+>
+> *disqus permite tener comentarios en tu pagina web*
 
 ## Como mantenerse actualizado
 
-La pagina de la [W3C](https://www.w3schools.com/html/)
-
-La pagina de [can i use](https://caniuse.com/) para saber en donde estan soportadas las funciones que queremos usar *pagina informativa excelente*
-
-Documentacion de la [MDN](https://developer.mozilla.org/es/docs/Web/HTML) (Mozilla Developer Network) *recomendada para mantenerse actualizado en web*
+> La pagina de la [W3C](https://www.w3schools.com/html/)
+>
+> La pagina de [can i use](https://caniuse.com/) para saber en donde estan soportadas las funciones que queremos usar *pagina informativa excelente*
+>
+> Documentacion de la [MDN](https://developer.mozilla.org/es/docs/Web/HTML) (Mozilla Developer Network) *recomendada para mantenerse actualizado en web*
+>
 
