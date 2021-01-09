@@ -25,6 +25,10 @@ Entre estas se pueden encontrar:
 
 ## Manfiesto Agile
 
+Nuestra mayor prioridad es **satisfacer al cliente** mediante la **entrega temprana** y continua de **software con valor**.
+
+Aceptamos que los **requisitos cambien**, incluso en etapas tardías del desarrollo. Los procesos ágiles aprovechan el **cambio para proporcionar ventaja competitiva** al cliente.
+
 ### Valores
 
 - **Software Funcionando** sobre documentación extensiva.
@@ -32,9 +36,9 @@ Entre estas se pueden encontrar:
 - **Individuos e Interacciones** sobre procesos y herramientas.
   - Las personas y producto de su trabajo nos digan como se deben adaptar estos procesos y herramientas.
 - **Colaboración con el cliente** sobre negociación contractual.
-  - 
-
-
+  - Como trabajar en sinergia más que entraparnos en temas legales o cosas que compliquen el tema de poder trabajar en colaborativo.
+- **Respuesta ante el cambio** sobre seguir un plan.
+  - Aceptar que pueden haber cambios.
 
 ## ¿Qué es SCRUM?
 
@@ -78,7 +82,15 @@ Por ejemplo: Vamos a suponer que deseamos desarrollar un E-commerce para una emp
 
 El Scrum Master es un líder que está al servicio del Scrum Team (servant leader). El Scrum Master ayuda a las personas externas al Scrum Team a entender qué interacciones o dinámicas con el Scrum Team pueden ser útiles y cuáles no. (no es el jefe del proyecto, ni el que ordena al equipo de desarrollo).
 
-Se encarga de dirigir la seremonia de scrum como el daily que es la reunión de quince minutos donde todo el equipo se reune y van diciendo que hizo ayer, que hará hoy, que obstaculos tiene, visiones semanales del trabajo, etc.
+Se encarga de dirigir la seremonia de scrum como el daily que es la reunión de quince minutos donde todo el equipo se reune y van respondiendo a tres preguntas:
+
+- ¿Qué hice desde la última reunión diaria?
+- ¿Qué voy hacer hasta la siguiente reunión?
+- ¿Qué impedimento tengo para realizar mi trabajo?
+
+> No es una reunión de reporte de estado
+>
+> La idea no es resolver los problemas, sólo identificarlos.
 
 ### Development Team
 
@@ -139,5 +151,77 @@ Ejemplo:
 
 Como son muchas tareas lo que se hace es dividir en sprint y son generalmente de dos semanas y tienen como objetivo entregar algo utilizable (funcional), por eso el scrum master ayuda a definir cuanto tomaria de tiempo cada tarea y calcular las horas para desarrollarlas dentro de un sprint y unirlo.
 
+- Iteración
+- Tiene una duración fija de entre 1 y 4 semanas
+- Una vez iniciado no varía la duración (timeboxed)
+- Permite lograr un ritmo sostenible
 
+Iteración significa el acto de **repetir un proceso** con la intención de alcanzar una meta deseada, objetivo o resultado.
 
+Es incremental porque los componentes logren evolucionar el producto dependiendo de los completados de las **iteraciones antecesoras**, agregando más opción de requisitos y ogrando así un mejoramiento mucho más completo.
+
+| Sprint | Estimación | Real | Propuesta de mejora |
+| :----: | :--------: | :--: | :-----------------: |
+|   1    |            |      |                     |
+|   2    |            |      |                     |
+|   3    |            |      |                     |
+
+## Artefactos de Scrum
+
+- Visión del producto
+- Backlog del producto
+- Objetivo del sprint
+- Backlog del spint
+- Lista de impedimientos
+- Burndown Chart
+
+## Para realizar Scrum debemos realizar
+
+1. Visión
+2. Backlog
+3. Review
+4. Retrospectiva
+
+### Tablero de visión del producto
+
+<table style="width:100%">
+  <tr>
+    <th colspan="4">Frase representativa</th>
+  </tr>
+  <tr>
+    <td>Grupo de usuarios</td>
+    <td>Necesidades</td>
+    <td>Producto</td>
+    <td>Valor</td>
+  </tr>
+    <tr>
+        <td>¿Para quién estamos trabajando en el proyecto?</td>
+        <td>¿Cuáles son las necesidades del grupo de usuarios?</td>
+        <td>¿Qué caracteristicas de tu producto sastifacen las necesidades de tus usuarios?</td>
+        <td>¿Qué valor le genera al negocio la satifacción de la necesidad del grupo de usuario a través del producto?</td>
+    </tr>
+</table>
+
+## Visual Story Mapping
+
+Está herramienta nos permite armar el backlog al flujo del usuario.
+
+Para ello usaremos la herramienta [**User story mapping tool**](https://storiesonboard.com/).
+
+Una vez identificadas todas las tareas (Stories) podemos usar [Trello](https://trello.com/) para convertirlas en tareas técnicas.
+
+![Ejemplo](https://www.myagilepartner.com/blog/wp-content/uploads/2018/08/story-mapping-%E2%80%93-exemple-story-map-1.png)
+
+## Demo or Die
+
+### Sprint Review
+
+Al final de cada Sprint entregar al PO lo que se comprometio a hacer el equipo en la planificación y ver si realmente este terminado y se cumplan los criterios de aceptación.
+
+## Retrospectiva
+
+Formulario de reunión de retrospectiva
+
+| ¿Qué salio bien en la iteración? | ¿Qué no salió bien en la iteración? | ¿Qué mejoras vamos a implementar en la próxima iteración? |
+| :------------------------------: | :---------------------------------: | :-------------------------------------------------------: |
+|            (aciertos)            |              (errores)              |           (recomendaciones de mejora continua)            |
