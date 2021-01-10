@@ -211,3 +211,77 @@ Algunas funciones de String mas usadas en php son:
 
 ## Numbers
 
+Una cosa a tener en cuenta sobre PHP es que proporciona conversión automática de tipos de datos. Entonces, si asigna un valor entero a una variable, el tipo de esa variable será automáticamente un entero. Luego, si asigna una cadena a la misma variable, el tipo cambiará a una cadena. Esta conversión automática a veces puede romper su código.
+
+## Math
+
+### Función pi()
+
+Retorna el valor de pi:
+
+```php
+<?php
+echo(pi()); // retorna 3.1415926535898
+?>
+```
+
+### Función min() y max()
+
+Las funciones min () y max () se pueden usar para encontrar el valor más bajo o más alto en una lista de argumentos:
+
+```php
+<?php
+echo(min(0, 150, 30, 20, -8, -200));  // retorna -200
+echo(max(0, 150, 30, 20, -8, -200));  // retorna 150
+?>
+```
+
+### Función abs()
+
+La función abs() se usa para encontrar el valor absoluto de un número:
+
+```php
+<?php
+echo(abs(-6.7));  // retorna 6.7
+?>
+```
+
+### Función sqrt()
+
+La función sqrt() se usa para encontrar la raíz cuadrada de un número:
+
+```php
+<?php
+	echo(sqrt(64));  // retorna 8
+?>
+```
+
+### Función round()
+
+La función round () redondea un número de decimal a su entero más cercano:
+
+```php
+<?php
+	echo(round(0.60));  // retorna 1
+	echo(round(0.49));  // retorna 0
+?>
+```
+
+### Función rand()
+
+Genera un número aleatorio:
+
+```php
+<?php
+	echo(rand());
+?>
+```
+
+Podemos agregar un rango de valores para poder obtener un numero aleatorio dentro de ese rango:
+
+```php
+<?php
+	echo(rand(10,100)); // retorna un número aleatorio entre 10 y 100
+?>
+```
+
