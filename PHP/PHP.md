@@ -285,3 +285,131 @@ Podemos agregar un rango de valores para poder obtener un numero aleatorio dentr
 ?>
 ```
 
+## Constantes
+
+Una constante es un identificador (nombre) de un valor simple. El valor no se puede cambiar durante el script. Un nombre de constante válido comienza con una letra o un guión bajo (sin signo $ antes del nombre de la constante).
+
+> Nota: A diferencia de las variables, las constantes automáticamente son globales en el script.
+
+### Definiendo una constante
+
+Para crear una constante usamos la función define()
+
+### Sintaxis
+
+> define(*name*, *value*, *case-insensitive*)
+
+Parámetros:
+
+- nombre: especifica el nombre de la constante.
+- value: especifica el valor de la constante no distingue entre mayúsculas y minúsculas
+- case-insensitive: especifica si el nombre de la constante no debe distinguir entre mayúsculas y minúsculas. El valor predeterminado es falso
+
+Veamos un ejemplo donde creamos una constante que es case-sensitive:
+
+```php
+<?php
+	define("GREETING", "Welcome to W3Schools.com!");
+	echo GREETING;
+?>
+```
+
+recordemos que dentro de la función define el parametro de case-insensitive por defecto es falso, si nosotros colocamos un true en ese parametro hacemos que nuestra constante sea case-insensitive
+
+```php
+<?php
+	define("GREETING", "Welcome to W3Schools.com!", true);
+	echo greeting;
+?>
+```
+
+## Arreglos (arrays)
+
+Los arreglos nos permiten almacenar multiples valores en una sola variable.
+
+```php
+    <?php
+        $Mascota = array ("Gato","Perro","Tortuga");
+        echo "Mis mascotas preferidas son $Mascota[0], $Mascota[1] y $Mascota[2]";
+    ?>
+```
+
+### Arreglos Asociativos
+
+Los arreglos asociativas son arreglos que utilizan claves con nombre que les asigna.
+
+Hay dos formas de crear un arreglo asociativo:
+
+```php
+<?php
+	$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+?>
+```
+
+y
+
+```php
+<?php	
+	$age['Peter'] = "35";
+	$age['Ben'] = "37";
+	$age['Joe'] = "43";
+?>
+```
+
+### Arreglos Multidimensionales
+
+Una matriz multidimensional es una matriz que contiene una o más matrices.
+
+PHP admite matrices multidimensionales que tienen dos, tres, cuatro, cinco o más niveles de profundidad. Sin embargo, las matrices de más de tres niveles de profundidad son difíciles de administrar para la mayoría de las personas.
+
+> Nota: La dimensión de una matriz indica el número de índices que necesita para seleccionar un elemento.
+>
+> - Para una matriz bidimensional, necesita dos índices para seleccionar un elemento
+> - Para una matriz tridimensional, necesita tres índices para seleccionar un elemento
+
+Un pequeño ejemplo de como se crea un arreglo bidimensional con php:
+
+```php
+<?php
+	$cars = array (
+	array("Volvo",22,18),
+	array("BMW",15,13),
+	array("Saab",5,2),
+	array("Land Rover",17,15)
+	);
+?>
+```
+
+### Sort (Funciones de ordenación)
+
+- sort(): Ordena el arreglo en forma ascendente.
+- rsort(): Ordena el arreglo en forma descendente.
+- asort(): Ordena el arreglo asociativo en forma ascendente de acuerdo con el valor.
+- ksort(): Ordena el arreglo asociativo en forma ascendente de acuerdo con la llave.
+- arsort(): Ordena el arreglo asociativo en forma descendente de acuerdo con el valor.
+- krsort(): Ordena el arreglo asociativo en forma descendente de acuerdo con la llave.
+
+Un pequeño ejemplo de como se usan estas funciones:
+
+```php
+<?php
+	$numbers = array(4, 6, 2, 22, 11);
+	sort($numbers);
+?>
+```
+
+## Variables Superglobales
+
+Algunas variables predefinidas en PHP son "superglobales", lo que significa que siempre son accesibles, independientemente del alcance, y puede acceder a ellas desde cualquier función, clase o archivo sin tener que hacer nada especial.
+
+Las variables superglobales son:
+
+- $GLOBALS
+- $_SERVER
+- $_REQUEST
+- $_POST
+- $_GET
+- $_FILES
+- $_ENV
+- $_COOKIE
+- $_SESSION
