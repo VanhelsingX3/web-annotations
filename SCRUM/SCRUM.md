@@ -1,3 +1,5 @@
+
+
 # SCRUM
 
 Scrum es una metodología para el desarrollo de software aunque en realidad no es solamente para el desarrollo de software, se puede aplicar a cualquier desarrollo de proyectos.
@@ -82,7 +84,7 @@ Por ejemplo: Vamos a suponer que deseamos desarrollar un E-commerce para una emp
 
 El Scrum Master es un líder que está al servicio del Scrum Team (servant leader). El Scrum Master ayuda a las personas externas al Scrum Team a entender qué interacciones o dinámicas con el Scrum Team pueden ser útiles y cuáles no. (no es el jefe del proyecto, ni el que ordena al equipo de desarrollo).
 
-Se encarga de dirigir la seremonia de scrum como el daily que es la reunión de quince minutos donde todo el equipo se reune y van respondiendo a tres preguntas:
+Se encarga de dirigir la ceremonia de scrum como el daily que es la reunión de quince minutos donde todo el equipo se reune y van respondiendo a tres preguntas:
 
 - ¿Qué hice desde la última reunión diaria?
 - ¿Qué voy hacer hasta la siguiente reunión?
@@ -225,3 +227,8 @@ Formulario de reunión de retrospectiva
 | ¿Qué salio bien en la iteración? | ¿Qué no salió bien en la iteración? | ¿Qué mejoras vamos a implementar en la próxima iteración? |
 | :------------------------------: | :---------------------------------: | :-------------------------------------------------------: |
 |            (aciertos)            |              (errores)              |           (recomendaciones de mejora continua)            |
+
+## Visión general
+
+![ciclo de scrum](https://2.bp.blogspot.com/-bEGzuRz6Lq4/WmGKSR0O6ZI/AAAAAAAAFOY/GGTZyyvnLDw-OI7DP8pjjDb81539NHJUgCLcBGAs/s1600/La%2Bcertificacion%2BScrum%2BMaster%2BProfesional.png)
+
