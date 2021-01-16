@@ -127,3 +127,14 @@ Los modelos tradicionales tal y como los hemos vivido, estaban muy orientados a 
 Hoy ya hemos dicho que eso no vale o no basta, ahora hay que primar mucho la agilidad y flexibilidad sin perder el control y la gobernanza. Por lo tanto, yo creo que esa mejor práctica que aplicaba antes, ahora ya no aplica tanto y hay que buscar esa vía donde, buscando automatización e industrialización, no lo contamines con, bueno, modelos de operación o modelos de comportamiento de otro tipo de plataformas y servicios.
 
 Algo clave es el cambio cultural. No es tanto un cambio tecnológico, sino es un cambio cultural. Es que a lo mejor cambia la forma radical de trabajar de la empresa. Lo que era un modelo muy tradicional de cómo consumía esos recursos internos, a lo mejor ya no se hacen así, entonces es verdad que ese cambio cuesta mucho, pero hay que pensar de forma global cómo va a aportar hacia fuera, hacia los clientes que al final son los que están dando dinero a nuestras empresas, como van a aportar esos go to market nuevos, esa forma de vender nueva, esa forma de evolucionar, de innovación, que yo creo que es lo que se busca con este tipo de adopciones.
+
+## Notas
+
+> Cloud Computing es principalmente un modelo de entrega y consumo de servicios apoyado por diversas tecnologías.
+
+> En Cloud Computing el usuario es responsable del uso y consumo que hace del servicio prestado, siendo el prestador el responsable de implementarlo, ejecutarlo y entregarlo.
+
+> ¿Cuáles son las categorías de Cloud en función del rol y control que ejercen usuario y prestador?
+>
+> Privada, pública, híbrida y en comunidad.
+
